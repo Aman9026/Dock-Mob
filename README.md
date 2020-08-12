@@ -4,7 +4,7 @@
 
 
 ### Why TerMobile?
-The application sends request to the linux server of the organisation which runs a python program on it to get the commands we send from the mobile to execute and return their output. It can be easily modified to be integrated with different kind of tools and technologies we use in the industry. Currently I am integrating it with docker to use docker from my mobile and I have planned to integrate it with Jenkins and control the whole CI/CD part of my projects from mobile.
+The rich UI on mobile's front end allows even non technical users to use the applications which require technical expertise. The application's frontend sends request to the linux server of the organisation which runs a python program on it to get the commands we send from the mobile to execute and return their output. It can be easily modified to be integrated with different kind of tools and technologies we use in the industry. Currently I am integrating it with docker to use docker from a mobile and I have planned to integrate it with Jenkins and control the whole CI/CD part of my projects from mobile in future updates.
 
 ### Usage
 ![demogif](https://github.com/Aman9026/Dock-Mob/blob/master/DEMO/ezgif.com-video-to-gif.gif)
