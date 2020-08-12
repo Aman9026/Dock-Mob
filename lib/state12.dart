@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 void main() {
   runApp(
@@ -15,21 +14,6 @@ class MyAppLW extends StatefulWidget {
 }
 
 class _MyAppLWState extends State<MyAppLW> {
-  var cmd;
-  var webdata;
-
-  myweb(cmd) async {
-    var url = "http://192.168.0.162/cgi-bin/web.py?x=${cmd}";
-    var r = await http.get(url);
-
-    setState(() {
-      webdata = r.body;
-    });
-
-    // print(webdata);
-  }
-
-/*
   var db = ["vimal", "jack", "krish", "linux"];
   var index = 0;
   lwclick() {
@@ -41,7 +25,7 @@ class _MyAppLWState extends State<MyAppLW> {
     print("indexed changed");
     print(index);
   }
-*/
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,22 +35,13 @@ class _MyAppLWState extends State<MyAppLW> {
       body: Center(
         child: Container(
           width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height * 0.8,
-          color: Colors.grey,
+          height: MediaQuery.of(context).size.height * 0.4,
+          color: Colors.transparent,
           child: Column(
             children: <Widget>[
-              Text("Enter ur linux cmd :"),
-              TextField(
-                onChanged: (value) {
-                  cmd = value;
-                },
-              ),
-              FlatButton(
-                  onPressed: () {
-                    myweb(cmd);
-                  },
-                  child: Text('click here')),
-              Text(webdata ?? "output is coming .."),
+              Text(db[index % db.length]),
+              FlatButton(onPressed: lwclick, child: Text('click here')),
+              Text("third"),
             ],
           ),
         ),
