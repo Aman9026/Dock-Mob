@@ -1,10 +1,8 @@
 # DockMob
 
-A new Flutter project.
+The application sends request to the linux server of the organisation which runs a python program on it to get the commands we send from the mobile to execute and return their output. It can be easily modified to be integrated with different kind of tools and technologies we use in the industry. Currently I am integrating it with docker to use docker from my mobile and I have planned to integrate it with Jenkins and control the whole CI/CD part of my projects from mobile.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
