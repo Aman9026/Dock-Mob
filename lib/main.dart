@@ -15,7 +15,7 @@ void main() {
 
 String cmd;
 web(i) async {
-  var url = "http://192.168.29.26/cgi-bin/web.py?x=$i";
+  var url = "http://your ip here/cgi-bin/web.py?x=$i";
   var response = await http.get(url);
   print(response.body);
 }
